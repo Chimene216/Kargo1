@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader_bg">
+      <div class="loader"></div>
+     
+</div>
+    <div class="container">
+      <form action="https://formspree.io/f/xwpevbqy" method="POST">
+        <h4> Bienvenue sur la page d'enregistrement. Saisissez vos informations dans toutes les cases vides, nous receverons votre canditadure par gmail</h4>
+        <div class="input-section">
+          <label>Votre nom :<span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Entrer votre Nom" 
+            name="Entrer votre Nom"
+            id="first-name-input"
+            required
+          />
+        </div>
+        <div class="input-section">
+          <label>Votre prénom:<span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Entrer votre Prénom"
+            name="Last Name"
+            required
+          />
+          
+        </div>
+        <div class="input-section">
+          <label>où vous vous situez Mr/mdme: <span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Entrer votre date et lieu de naissance"
+            name="Date et lieu de naissance"
+            required
+          />
+          <div class="input-section">
+            <label>Votre date de naissance<span class="required-color">*</span></label>
+            <input
+              type="text "
+              placeholder="Entrer votre date et lieu de naissance"
+              name="Date et lieu de naissance"
+              required
+            />
+            <div class="input-section">
+              <label>Votre Adresse mail<span class="required-color">*</span></label>
+              <input
+                type="text "
+                placeholder="Entrer votre date et lieu de naissance"
+                name="Date et lieu de naissance"
+                required
+              />
+              <div class="input-section">
+                <label>Votre Sexe<span class="required-color">*</span></label>
+                <input
+                  type="text "
+                  placeholder="Entrer votre date et lieu de naissance"
+                  name="Date et lieu de naissance"
+                  required
+                />
+            
+          
+        </div>
+        <div class="input-section">
+          <label>Numéro de téléphone<span class="required-color">*</span></label>
+          <input type="email" placeholder="Entrer votre Numéro de telephone" name="email" required />
+        </div>
+        <div class="input-section">
+          <label>Entrez votre message:<span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Entrer votre message"
+            name="phone"
+            required
+          />
+        </div>
+
+        <button id="submit-button">Envoyer le formulaire</button>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="script10.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+   
+  </body>
+</html>
